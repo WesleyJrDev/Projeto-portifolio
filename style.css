@@ -1,0 +1,145 @@
+@charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Ubuntu&display=swap');
+@font-face {
+    font-family: 'Marcelus SC';
+    src: url(fontes/Marcellus_SC/MarcellusSC-Regular.ttf) format(opentype);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Ubunto';
+    src: url(fontes/Ubuntu-Regular.ttf) format(opentype);
+    font-weight: normal;
+}
+
+:root{
+    --cor0:#454033;
+    --cor1:#2C3245;
+    --cor2:#918B7A;
+    --cor3:#7A7F91;
+    --cor4:#DEDAD1;;
+    --cor5:white;
+    --cor6:black;
+
+    --fonte-reserva: Arial,Helvetica, sans-serif;
+    --fonte-padrao: 'Ubunto';
+    --fonte-destaque: 'Marcelus SC';
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:  var(--fonte-destaque), var(--fonte-reserva);
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--cor2);
+
+}
+header{
+    background-color: var(--cor0);
+    padding: 0% 6% 3% 0%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+header h1{
+    margin: -160px 0px 10px 0px;
+    padding: 2% 0% 0% 0%;
+    text-align: right;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.555);
+    letter-spacing: -2px;
+    font-weight: 50;
+    font-size: calc(2em + 2vw);
+    color: var(--cor4);
+    
+}
+
+header > p{
+    color: var(--cor3);
+    margin: -15px 0px 0px 10px;
+    text-align: right;
+    letter-spacing: 3px;
+    font-size: calc(.4em + 1.3vw);
+}
+
+img#fotoperfil{
+    max-width: 30%;
+    border-radius: 1% 1% 50% 1%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.719);
+    margin: 0px 0px 0px 1%;
+}
+
+img#fotoperfil:hover{
+    position: relative;
+    top: 3px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.404);
+}
+
+.sobrenomeds{
+    font-size: 1em;
+}
+@media screen and (max-width:700px){
+    .sobrenomeds{display: none;}}
+
+@media screen and (min-width:1150px){
+    .sobrenomeds{display: none;}}
+
+.sobrenomedamazio{
+    font-size: 1em;
+}
+@media screen and (max-width:1150px){
+    .sobrenomedamazio{display: none;}}
+
+@media screen and (min-width:1350px){
+    .sobrenomedamazio{display: none;}}
+
+.sobrenomecompleto{
+    font-size: 1em;
+}
+@media screen and (max-width:1350px){
+    .sobrenomecompleto{display: none;}
+}
+
+nav{
+    text-align: end;
+    text-shadow: 2px 2px 5px white;
+    padding: 10px 5.3% 0px 0px;
+    margin: -5px 0px 0px 0px;
+    
+}
+
+nav > a{
+    background-image: linear-gradient(var(--cor1), var(--cor3));
+    color: var(--cor0);
+    font-size: calc(1em + 3vw);
+    margin-left: -3px;
+    padding:9px 5px 9px 5px;
+    border-radius: 0px 0px 0px 10px;
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.719);
+}
+
+a:hover{
+    position: relative;
+    top: 3px;
+    text-align: center;
+    box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.719);
+    
+
+}
+
+main {
+    font: normal 1em var(--fonte-padrao), var(--fonte-reserva);
+    text-align: justify;
+    text-indent: 30px;
+    min-width: 300px;
+    margin: -40px 6% 5% 6%;
+    padding: 110px 35px 20px 35px;
+    background-color: var(--cor4);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
+    
+}
+footer{
+    text-align: center;
+    color: var(--cor1);
+    text-shadow: 1px 1px 3px 161845;
+    padding-bottom: 20px;
+}
+
