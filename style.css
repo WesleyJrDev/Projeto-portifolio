@@ -13,10 +13,12 @@
 
 :root{
     --cor0:#454033;
-    --cor1:#2C3245;
+    --cor0transp:#4540339a;
+    --cor1:#2c3245;
     --cor2:#918B7A;
     --cor3:#7A7F91;
-    --cor4:#DEDAD1;;
+    --cor4:#dedad1;
+    --cor4transp:#dedad1f3; 
     --cor5:white;
     --cor6:black;
 
@@ -32,44 +34,53 @@
 }
 
 body{
-    background-color: var(--cor2);
+    background: black url(Imagens/note-mesa-claro.jpg) center center no-repeat fixed;
+    background-size: cover;
 
 }
 header{
-    background-color: var(--cor0);
+    background-color:var(--cor0transp);
+    height: 20vh;
+    width: 94%;
     padding: 0% 6% 3% 0%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
 }
 header h1{
-    margin: -160px 0px 10px 0px;
     padding: 2% 0% 0% 0%;
-    text-align: right;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.555);
     letter-spacing: -2px;
     font-weight: 50;
     font-size: calc(2em + 2vw);
     color: var(--cor4);
-    
+    position: absolute;
+    bottom: 20%;
+    right: 3%;
 }
 
-header > p{
+header p{
     color: var(--cor3);
     margin: -15px 0px 0px 10px;
     text-align: right;
     letter-spacing: 3px;
     font-size: calc(.4em + 1.3vw);
+    position: absolute;
+    bottom: 10%;
+    right: 3%;
 }
 
 img#fotoperfil{
-    max-width: 30%;
+    max-width: 35vh;
     border-radius: 1% 1% 50% 1%;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.719);
-    margin: 0px 0px 0px 1%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
 }
 
 img#fotoperfil:hover{
     position: relative;
-    top: 3px;
+    top: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.404);
 }
 
@@ -103,7 +114,7 @@ nav{
     text-shadow: 2px 2px 5px white;
     padding: 10px 5.3% 0px 0px;
     margin: -5px 0px 0px 0px;
-    
+    opacity: 0.97;
 }
 
 nav > a{
@@ -132,14 +143,15 @@ main {
     min-width: 300px;
     margin: -40px 6% 5% 6%;
     padding: 110px 35px 20px 35px;
-    background-color: var(--cor4);
+    background-color: var(--cor4transp);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
     
 }
+
 footer{
     text-align: center;
-    color: var(--cor1);
-    text-shadow: 1px 1px 3px 161845;
+    color: var(--cor2);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.699);
     padding-bottom: 20px;
 }
 
