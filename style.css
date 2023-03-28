@@ -31,51 +31,54 @@
     padding: 0%;
     font-family:  var(--fonte-destaque), var(--fonte-reserva);
     text-decoration: none;
+    
+    
 }
 
 body{
     background: black url(Imagens/note-mesa-claro.jpg) center center no-repeat fixed;
     background-size: cover;
+    box-shadow: inset 2px 2px 5px black;
 
 }
 header{
     background-color:var(--cor0transp);
-    height: 20vh;
-    width: 94%;
+    height: 130px;
+    width: 100vw;
     padding: 0% 6% 3% 0%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    position: absolute;
+    position:fixed;
+    top: 0;
+    left: 0;
 }
 header h1{
     padding: 2% 0% 0% 0%;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.555);
     letter-spacing: -2px;
     font-weight: 50;
-    font-size: calc(2em + 2vw);
+    font-size: calc(6vh + 1.5vw);
     color: var(--cor4);
     position: absolute;
-    bottom: 20%;
-    right: 3%;
+    bottom: 7vh;
+    right: 9vw;
 }
 
 header p{
     color: var(--cor3);
-    margin: -15px 0px 0px 10px;
-    text-align: right;
     letter-spacing: 3px;
-    font-size: calc(.4em + 1.3vw);
+    font-size:calc(1vw + 1.1vw);
     position: absolute;
-    bottom: 10%;
-    right: 3%;
+    bottom: 3vh;
+    right: 9vw;
 }
 
 img#fotoperfil{
-    max-width: 35vh;
+    max-width: 30vh;
     border-radius: 1% 1% 50% 1%;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.719);
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 2px;
+    left: 2px;
 }
 
 img#fotoperfil:hover{
@@ -110,17 +113,19 @@ img#fotoperfil:hover{
 }
 
 nav{
-    text-align: end;
     text-shadow: 2px 2px 5px white;
-    padding: 10px 5.3% 0px 0px;
-    margin: -5px 0px 0px 0px;
+    padding: 0px 5.3% 0px 0px;
+    margin:0px;
     opacity: 0.97;
+    position: fixed;
+    top: 154px;
+    right:0;
 }
 
 nav > a{
     background-image: linear-gradient(var(--cor1), var(--cor3));
     color: var(--cor0);
-    font-size: calc(1em + 3vw);
+    font-size: 5vh;
     margin-left: -3px;
     padding:9px 5px 9px 5px;
     border-radius: 0px 0px 0px 10px;
@@ -141,17 +146,20 @@ main {
     text-align: justify;
     text-indent: 30px;
     min-width: 300px;
-    margin: -40px 6% 5% 6%;
-    padding: 110px 35px 20px 35px;
+    margin: 140px 6% 5% 6%;
+    padding: 120px 35px 20px 35px;
     background-color: var(--cor4transp);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
-    
+    position: static;
+
 }
 
 footer{
-    text-align: center;
     color: var(--cor2);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.699);
-    padding-bottom: 20px;
+    text-align: center;
+    padding-top: -245vh;
+    position: relative;    
 }
+
 
