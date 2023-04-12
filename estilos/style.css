@@ -1,0 +1,105 @@
+@charset "utf-8";
+:root{
+    --cor0:#0D0D0D;
+    --cor1:#BFAD8A;
+    --cor2:#4A6D8C;
+    --cor3:#2E4559;
+    --cor4:#1B2E40;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+img{
+    position: relative;
+    max-width: 35vh;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.315);
+}
+
+header{
+    position: fixed;
+    background-image: linear-gradient(var(--cor3), var(--cor4));
+    width: 100%;
+    height: 150px;
+    color: var(--cor1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.658);
+    
+}
+
+header > section#cabeçalho{
+    text-align: end;
+    margin-top: -25vh;
+    padding-right: 4vw;
+    
+
+}
+
+p#nome{
+    font-size: 4.3vw;
+    letter-spacing: calc(1px + .1vw);
+}
+
+p#função{
+    font-size: calc(2vh + .5vw);
+    padding-left: 3vw;
+    margin-top: calc(5px - 1.3vw);
+    letter-spacing: calc(.1px + .7vw);
+   
+}
+
+
+body{
+    background-image: url(../Imagens/note-azul.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+nav{
+    text-align: end;
+}
+
+a {
+    background-color: var(--cor1);
+    position: relative;
+    top: calc(7vh - 1vw);
+    text-decoration: none;
+    color: var(--cor4);
+    padding: 5px;
+    border-radius: 1px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.562);
+}
+
+#experiencia:hover{
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.637);
+}
+
+main{
+    text-align: center;
+    background-size: cover;
+}
+
+iframe{
+    width: 75vw;
+    height: 150vh;
+    
+}
+
+footer{
+    color: var(--cor2);
+    padding: 10px;
+    text-align: center;
+}
+
+
