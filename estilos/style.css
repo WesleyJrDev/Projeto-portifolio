@@ -153,12 +153,27 @@ section#formação{
     box-shadow: 2px 2px 5px black;
 }
 
-p#formado{
+p#automação{
     position: absolute;
     top: 10vh;
     left: 2vw;
     width: 380px;
-    text-indent: 40px;
+    font-size: 1.2em; 
+    color: var(--cor1);
+}
+p#logistica{
+    position: absolute;
+    top: 25vh;
+    left: 2vw;
+    width: 380px;
+    font-size: 1.2em; 
+    color: var(--cor1);
+}
+p#psi{
+    position: absolute;
+    top: 40vh;
+    left: 2vw;
+    width: 380px;
     font-size: 1.2em; 
     color: var(--cor1);
 }
