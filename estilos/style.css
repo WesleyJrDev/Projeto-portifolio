@@ -65,7 +65,6 @@ h1#ola{
     width: 200px;
     font-size: 4em;
     text-align: right;
-   
 }
 
 p#tenho{
@@ -76,7 +75,7 @@ p#tenho{
     text-align: right;
     font-size: 1.5em;
     margin: 5px 0px;
-    color: #f2f2f2b7;
+    color: #f2f2f259;
 }
 
 p#sou{
@@ -86,7 +85,7 @@ p#sou{
     width: 340px;
     font-size: 2em;
     text-align: right;
-    color: var(--cor3);
+    color: #f2f2f27e;
 }
 
 /* section objetivo */
@@ -95,37 +94,25 @@ section#objetivo{
     width: 400px;
     height: 100vh;
     margin: auto;
-    background-color: var(--cor3);
+    background-color: var(--cor5);
     color: var(--cor4);
     box-shadow: 2px 2px 5px black;
 }
 
-p#busco{
-    position: absolute;
-    top: 10vh;
-    left: 2vw;
-    color: #010d00d8;
-    width: 380px;
-    text-align: justify;
-    text-indent: 40px;
-    font-size: 1.7em;    
-}
 /* section habilidades */
 section#habilidades{
     position: relative;
-    top: 5px;
     width: 400px;
     height: 100vh;
     margin: auto;
-    background-color: var(--cor0);
-    color: #F2F2F2;
+    background-color: var(--cor5);
     box-shadow: 2px 2px 5px black;
 }
 h2.hab{
     position: absolute;
     top: 30vh;
     left: 2vw;
-    color:#F2F2F2;
+    color: var(--cor1);
     width: 380px;
     text-align: center;
     font-size: 1.7em; 
@@ -135,61 +122,103 @@ p.hab{
     position: absolute;
     top: 40vh;
     left: 2vw;
-    color: var(--cor1);
+    color: var(--cor0);
     width: 380px;
     text-align: center;
     font-size: 2em; 
 }
 
+p.busco{
+    padding-top: 12vh;
+    margin: auto;
+    color: #010d00d8;
+    width: 357px;
+    text-align: center;
+    font-size: 1.6em;    
+}
+
 /* section formação */
 section#formação{
     position: relative;
-    top: 5px;
     width: 400px;
     height: 100vh;
     margin: auto;
-    background-color: var(--cor3);
-    color: var(--cor2);
+    background-color: var(--cor0);
     box-shadow: 2px 2px 5px black;
 }
 
 p#automação{
     position: absolute;
     top: 10vh;
-    left: 2vw;
-    width: 380px;
+    right: 0vw;
+    width: 300px;
     font-size: 1.2em; 
-    color: var(--cor1);
+    background-color: var(--cor1);
+    color: var(--cor0);
+    box-shadow: 1px 1px 3px var(--cor1);
+    text-align: right;
+    border-radius: 20px 0% 0% 20px;
+    padding: 20px;
 }
 p#logistica{
     position: absolute;
-    top: 25vh;
-    left: 2vw;
-    width: 380px;
-    font-size: 1.2em; 
-    color: var(--cor1);
+    top: 30vh;
+    left: 0vw;
+    width: 250px;
+    font-size: 1.2em;
+    background-color: var(--cor1);
+    color: var(--cor0);
+    box-shadow: 1px 1px 3px var(--cor1);
+    border-radius: 0px 20px 20px 0px;
+    padding: 20px;
 }
 p#psi{
     position: absolute;
-    top: 40vh;
-    left: 2vw;
-    width: 380px;
-    font-size: 1.2em; 
-    color: var(--cor1);
+    top: 55vh;
+    right: 0vw;
+    width: 300px;
+    font-size: 1.2em;
+    background-color: var(--cor1);
+    color: var(--cor0);
+    box-shadow: 1px 1px 3px var(--cor1);
+    text-align: right;
+    border-radius: 20px 0% 0% 20px;
+    padding: 20px;
 }
 
 .str{
-    color: var(--cor2);
-    font-size: 2em;
+    color: var(--cor3);
+    font-size: 1.5em;
 }
 
 p#base{
-    position: absolute;
-    top: 50vh;
-    left: 2vw;
-    width: 380px;
+    color: var(--cor1);
+    padding-top: 82vh;
+    margin: auto;
+    width: 300px;
+    text-align: justify;
     text-indent: 40px;
-    font-size: 1.3em; 
+    font-size: 0.9em; 
+}
+
+/* section Portifólio */
+
+section#portifolio{
+    position: relative;
+    width: 400px;
+    height: 100vh;
+    margin: auto;
+    background-color: var(--cor2);
+    box-shadow: 2px 2px 5px black;    
+}
+
+h2#port{
+    position: absolute;
+    top: 10vh;
+    left: 0vw;
+    color:var(--cor3);
+    width: 380px;
+    font-size: 3em;
 }
 
 
