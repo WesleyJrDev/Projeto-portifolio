@@ -13,6 +13,7 @@
     margin: 0px;
     padding: 0px;
     font-size: 1em;
+    text-decoration: none;
 }
 
 header{
@@ -220,6 +221,21 @@ h2#port{
     width: 380px;
     font-size: 3em;
 }
+
+div.janela{
+    margin: auto;
+    text-align: center;
+    padding: 30vh 0px 0px 0px;
+}
+
+h3.titulos{
+    text-align: right;
+    color: var(--cor1);
+    font-size: 2em;
+    padding: 10px;
+}
+
+
 
 
 
