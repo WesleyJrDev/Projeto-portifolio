@@ -1,4 +1,13 @@
 @charset "utf-8";
+@font-face {
+    font-family: play;
+    src: url(../fontes/Ubunto/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: playbold;
+    src: url(../fontes/Ubunto/Ubuntu-Bold.ttf);
+}
+
 :root{
     --cor0:#260126;
     --cor1:#025951;
@@ -14,6 +23,7 @@
     padding: 0px;
     font-size: 1em;
     text-decoration: none;
+    font-family: play, Arial, Helvetica, sans-serif;
 }
 
 header{
@@ -46,7 +56,6 @@ section#perfil{
     background-color: var(--cor0);
     color: var(--cor1);
     box-shadow: 2px 2px 5px black;
-    
 }
 
 #imgperfil{
@@ -66,15 +75,16 @@ h1#ola{
     width: 200px;
     font-size: 4em;
     text-align: right;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 p#tenho{
     position: absolute;
     top: 35vh;
     right: 0vw;
-    width: 150px;
+    width: 130px;
     text-align: right;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 5px 0px;
     color: #f2f2f259;
 }
@@ -129,15 +139,6 @@ p.hab{
     font-size: 2em; 
 }
 
-p.busco{
-    padding-top: 12vh;
-    margin: auto;
-    color: #010d00d8;
-    width: 357px;
-    text-align: center;
-    font-size: 1.6em;    
-}
-
 /* section formação */
 section#formação{
     position: relative;
@@ -188,8 +189,9 @@ p#psi{
 }
 
 .str{
-    color: var(--cor3);
+    color: var(--cor5);
     font-size: 1.5em;
+    text-shadow: 1px 1px 3px var(--cor2);
 }
 
 p#base{
@@ -202,15 +204,24 @@ p#base{
     font-size: 0.9em; 
 }
 
+p.busco{
+    padding-top: 12vh;
+    margin: auto;
+    color: var(--cor2);
+    width: 357px;
+    text-align: center;
+    font-size: 1.6em;    
+}
+
 /* section Portifólio */
 
 section#portifolio{
     position: relative;
     width: 400px;
-    height: 100vh;
+    height: max-content;
     margin: auto;
     background-color: var(--cor2);
-    box-shadow: 2px 2px 5px black;    
+    box-shadow: 2px 2px 5px black; 
 }
 
 h2#port{
@@ -223,17 +234,29 @@ h2#port{
 }
 
 div.janela{
+    width: 100%;
     margin: auto;
     text-align: center;
     padding: 30vh 0px 0px 0px;
 }
 
-h3.titulos{
+.linksProj{
     text-align: right;
     color: var(--cor1);
     font-size: 2em;
-    padding: 10px;
 }
+
+/* section Contato */
+section#contato{
+    position: relative;
+    width: 400px;
+    height: 100vh;
+    margin: auto;
+    background-color: var(--cor5);
+    box-shadow: 2px 2px 5px black;
+}
+
+
 
 
 
