@@ -270,6 +270,10 @@ div.janela:hover{
 /* section Contato */
 section#contato{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
     width: 400px;
     height: 100vh;
     margin: auto;
