@@ -25,6 +25,11 @@
     text-decoration: none;
     font-family: play, Arial, Helvetica, sans-serif;
 }
+*::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
 
 header{
     position: relative;
@@ -99,17 +104,6 @@ p#sou{
     color: #f2f2f27e;
 }
 
-/* section objetivo */
-section#objetivo{
-    position: relative;
-    width: 400px;
-    height: 100vh;
-    margin: auto;
-    background-color: var(--cor5);
-    color: var(--cor4);
-    box-shadow: 2px 2px 5px black;
-}
-
 /* section habilidades */
 section#habilidades{
     position: relative;
@@ -136,81 +130,88 @@ p.hab{
     color: var(--cor0);
     width: 380px;
     text-align: center;
-    font-size: 2em; 
+    font-size: 2em;
 }
 
 /* section formação */
 section#formação{
     position: relative;
     width: 400px;
-    height: 100vh;
+    height: 101vh;
     margin: auto;
     background-color: var(--cor0);
     box-shadow: 2px 2px 5px black;
+    background-color: var(--cor0);
+}
+#formação h2 {
+    color: var(--cor0);
+    font-size: 5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.342);
 }
 
-p#automação{
-    position: absolute;
-    top: 10vh;
-    right: 0vw;
+#formação p{
     width: 300px;
-    font-size: 1.2em; 
+    font-size: .8em; 
     background-color: var(--cor1);
     color: var(--cor0);
-    box-shadow: 1px 1px 3px var(--cor1);
+    box-shadow: 1px 1px 3px var(--cor4);
     text-align: right;
     border-radius: 20px 0% 0% 20px;
-    padding: 20px;
+    padding: 30px;
+}
+p#automação{
+    position: absolute;
+    top: 20vh;
+    right: 0vw;
 }
 p#logistica{
     position: absolute;
-    top: 30vh;
+    top: 40vh;
     left: 0vw;
-    width: 250px;
-    font-size: 1.2em;
-    background-color: var(--cor1);
-    color: var(--cor0);
-    box-shadow: 1px 1px 3px var(--cor1);
     border-radius: 0px 20px 20px 0px;
-    padding: 20px;
+    text-align: left;
 }
 p#psi{
     position: absolute;
-    top: 55vh;
+    top: 60vh;
     right: 0vw;
-    width: 300px;
-    font-size: 1.2em;
-    background-color: var(--cor1);
-    color: var(--cor0);
-    box-shadow: 1px 1px 3px var(--cor1);
-    text-align: right;
-    border-radius: 20px 0% 0% 20px;
-    padding: 20px;
 }
 
 .str{
-    color: var(--cor5);
-    font-size: 1.5em;
+    color: var(--cor3);
+    font-size: 2em;
     text-shadow: 1px 1px 3px var(--cor2);
 }
 
 p#base{
-    color: var(--cor1);
-    padding-top: 82vh;
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--cor3);
+    padding-top: 78vh;
     margin: auto;
     width: 300px;
     text-align: justify;
     text-indent: 40px;
-    font-size: 0.9em; 
+    font-size: 0.83em; 
+    text-shadow: 1px 1px 3px#010D00;
+}
+
+/* section objetivo */
+section#objetivo{
+    position: relative;
+    width: 400px;
+    height: 100vh;
+    margin: auto;
+    background-color: var(--cor5);
+    box-shadow: 2px 2px 5px black;
 }
 
 p.busco{
     padding-top: 12vh;
     margin: auto;
-    color: var(--cor2);
     width: 357px;
     text-align: center;
-    font-size: 1.6em;    
+    font-size: 1.6em;     
 }
 
 /* section Portifólio */
@@ -220,28 +221,37 @@ section#portifolio{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly; 
+    align-items: center;
     width: 400px;
-    height: 110vh;
+    height: 109vh;
     margin: auto;
     background-color: var(--cor2);
+    background-image: url(../Imagens/codigo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
     box-shadow: 2px 2px 5px black; 
 }
 
 h2#port{
-    color:var(--cor3);
     width: 380px;
     font-size: 5em;
+    background-image: url(../Imagens/codigo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 div.janela{
-    width: 50%;
-    padding-left: 209px;
+    width: 49%;
+    padding-left: 249px;
 }
 
 div.janela:hover{
     transition: .3s;
     padding-left: 0px;
-    width: 105%;
+    width: 115%;
     .textolink{
         display: block;
     }
@@ -254,6 +264,7 @@ div.janela:hover{
     color: var(--cor4);
     width: 96%;
     border-radius: 100px 0px 0px 100px;
+    box-shadow: 3px 3px 5px black;
 }
 
 .linksProj > img{
@@ -263,8 +274,9 @@ div.janela:hover{
 
 .textolink{
     display: none;
-    font-size: 2.5em;
+    font-size: 2.2em;
     text-align: center;
+    padding: 10px;
 }
 
 /* section Contato */
